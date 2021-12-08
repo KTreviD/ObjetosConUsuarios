@@ -1,0 +1,463 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+}
+
+.Contenedor
+{
+	width: 90%;
+	max-width: 1200px;
+	overflow: hidden;
+	margin: auto;
+}
+
+
+header
+{
+	height:100vh;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .9) 5%, rgba(78,59,49, .6) 100%), url(../Img/FotoFondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.Head
+{
+	text-align: center;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+.Carrito
+{
+	position: fixed;
+	top: 20px;
+	left: 22px;
+	background: #000;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	padding-right: 4px;
+	padding-top: 3px;
+	padding-left: 2px;
+}
+.Carrito i
+{
+	color: #fff;
+	position: relative;
+	width: 0;
+	height: 0;
+	transform: scale(2.1);
+}
+.Menu
+{
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	background: #000;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	border-radius: 10px;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+.Menu i
+{
+	color: #fff;
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	transform: scale(2.1);
+
+}
+
+.Menu-Navegacion
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 80px;
+	background: #000;
+	display:flex;
+	justify-content: space-evenly;
+	align-items: center;
+	transition: transform .3s ease-in-out;
+	transform: translate(110%);
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+}
+
+.Spread
+{
+	transform: translate(0);
+}
+
+.Menu-Navegacion a
+{
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration:none;
+}
+
+.Titulo
+{
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+
+/* Nuestro servicio */
+
+.Subtitulo
+{
+	text-align: center;
+	font-weight: 700;
+	color: #4B2317;
+	margin-top: 15px;
+	margin-bottom: 60px;
+	font-size: 40px;
+}
+.Contenedor-Servicio
+{
+	display: flex;
+	margin-bottom: 25px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.Contenedor-Servicio img
+{
+	width: 40%;
+}
+
+.Checklist-Servicio
+{
+	width: 45%;
+}
+
+.Service
+{
+	margin-bottom: 30px;
+}
+.N-Service
+{
+	margin-bottom: 10px;
+	color: #4B2317;
+}
+
+.Number
+{
+	display: inline-block;
+	background-image: linear-gradient(rgba(78, 59, 49,1) 100%, rgba(78, 59, 49,1) 100%);
+	width:30px;
+	height: 30px;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	padding-top: .5px;
+	padding-right: 1px;
+	font-weight: 700;
+	line-height: 30px;
+	margin: 0 5px 0 0;
+}
+
+.Gallery
+{
+	background: #fff;
+}
+
+.Contenedor-Galeria
+{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-bottom: 20px;
+}
+.Img-Galeria
+{
+	border-radius: 10%;
+	object-fit: cover;
+	width: 100%;
+	display: block;
+	margin: 5px 3px;
+	box-shadow: 0 0 6px rgba(0,0,0,.5);
+	cursor: pointer;
+}
+.Img-A
+{
+	width: 24%;
+	display: inline-block;
+	transition: transform .2s;
+}
+.Img-A:hover
+{
+	transform: scale(1.03);
+}
+.Imagen-Light
+{	
+	position: fixed;
+	background: rgba(0,0,0,.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(100%);
+	transition: transform .2s ease-in-out;
+}
+.Show
+{
+	transform: translate(0);
+}
+.Agregar-Imagen
+{
+	object-fit: cover;
+	width: 60%;
+	border-radius: 10px;
+	transform: scale(0);
+	transition: transform .3s .2s;
+}
+.ShowImage
+{
+	transform: scale(1);
+}
+.Close
+{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 40px;
+	cursor: pointer;
+}
+.Experts 
+{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+
+.Cont-Experts img
+{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+}
+
+.Cont-Experts
+{
+	width: 30%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.N-Expert
+{
+	display: inline-block;
+	margin-top: 20px;
+	width: 100%;
+	font-weight: 400;
+}
+
+/* Footer */
+
+footer
+{
+	background: #000;
+	padding-bottom: 0.1px;
+}
+
+.Footer-Content
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.Contact-Us
+{
+	width: 40%;
+	color: #fff;
+}
+
+.Brand
+{
+	font-weight: 500;
+	font-size: 40px;
+}
+.Social-Media
+{
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 10px;
+}
+.Social-Media-Icon
+{
+	display: inline-block;
+	margin-left: 20px;
+	width: 60px;
+	height: 60px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	text-align: center;
+	color: #fff;
+	transition: all .4s;
+}
+.Social-Media-Icon:hover
+{
+	background: #fff;
+	color: #4B2317;
+	transform: scale(1.3);
+}
+.Social-Media-Icon i
+{
+	font-size: 30px;
+	line-height: 60px;
+}
+.Line
+{
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 60px;
+}
+
+@media screen and (max-width: 800px)
+{
+	.Menu-Navegacion
+	{
+		height: 80px;
+	}
+
+	.Titulo
+	{
+		font-size: 40px;
+	}
+	.Contenedor-Servicio img
+	{
+		width: 80%;
+		margin-bottom: 40px;
+	}
+	.Checklist-Servicio
+	{
+		width: 80%;
+	}
+	.Service
+	{
+		margin-bottom: 30px;
+	}
+	.Agregar-Imagen
+	{
+		width: 80%;
+	}
+	.Img-A
+	{
+		margin-bottom: 12px;
+		width: 45%;
+		transition: transform .2s;
+	}
+	.Img-A:hover
+	{
+		transform: scale(1.03);
+	}
+	.Cont-Experts
+	{
+		width: 80%;
+	}
+	.Footer-Content
+	{
+		justify-content: center;
+	}
+	.Social-Media
+	{
+		width: 80%;
+		justify-content: space-evenly;
+	}
+	.Social-Media-Icon
+	{
+		margin-left: 0;
+	}
+	.Social-Media i
+	{
+		margin-left: 0;
+	}
+	.Contact-Us
+	{
+		text-align: center;
+		width: 80%;
+		margin-bottom:40px;
+	}
+}
+
+@media screen and (max-width:500px)
+{
+	.Menu-Navegacion
+	{
+		display: flex;
+		flex-wrap: wrap;
+		height: 110px;
+	}
+	.Titulo
+	{
+		font-size: 30px;
+	}
+	.Subtitulo
+	{
+		font-size: 30px;
+	}
+	.Menu-Navegacion a
+	{
+		margin: 0 20px;
+	}
+	.Agregar-Imagen
+	{
+		width:95%;
+	}
+	.Img-A
+	{
+		margin: 2px 2px;
+		width: 45%;
+		transition: all .2s;
+	}
+	.Img-A:hover
+	{
+		transform: scale(1.03);
+	}
+	.Social-Media
+	{
+		width: 100%;
+	}
+	.Contact-Us
+	{
+		width: 90%;
+	}
+}

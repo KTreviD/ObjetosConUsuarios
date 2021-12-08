@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ElAlquimista</title>
+	<meta charset="utf-8">
+	<link href='https://unpkg.com/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="Css/Pedido.css">
+</head>
+<body>
+	<div class="Pagina">
+		<div class="Nav">
+			<div>
+				<div class="Texto">
+					<a class="Link" href="index.html" >ElAlquimista</a>
+				</div>
+			</div>
+			<div class="AbrirCarrito">
+				<div>
+					<a href="Compra.html" class="LinkCompra"> Ir al carrito </a>
+				</div>
+			</div>
+		<div class="Nav__Carrito">
+			<a href="Compra.html" class="LinkCompra">
+			<i class='bx bx-cart-alt CarritoChiquito Icono' ></i>
+			</a>
+		</div>
+	</div>
+
+	
+	<div class="Mostrar">
+		<div class="Productos"> Productos en el carrito.</div>
+		<div class="CarritoPedido">
+			
+		<div class="Total">
+			<p class="CaracTotal">Total: 
+			</p>
+
+			<p class="CaracTotal AquiTotal">
+			</p>
+		</div>
+		</div>
+		
+	</div>
+
+				<div class="Lista">
+					<i class='bx bxs-plus-square' id="Inicial"></i>
+					<i class='bx bxs-minus-square' id="Inicial"></i>
+				</div>
+	<button class="BotonDatos">Llena tus datos</button>
+	<button class="Boton">Hacer pedido</button>
+		
+	</div>
+	<div class="Formato"> 
+
+			<div class="Formato__Hijo" action="Pedido.html" method="post">
+				<form>
+		    		<h1 class="TituloForm">Llena tus datos</h1>
+		    		<input class = "Input" type="text" name="" placeholder="Nombre completo">
+		    		<br>
+		       		<input class = "Input" type="text" name="" placeholder="Password">
+		       		<br>
+		       		
+		       		<i class='bx bx-x XFormato'></i>
+		       	</form>
+	   	 		<button class = "Mandar" >Listo</button>
+	   	 	</div>
+	   	 	
+	</div>
+	<script type="text/javascript" src="JavaScript/JsPedido.js"></script>
+</body>
+</html>
